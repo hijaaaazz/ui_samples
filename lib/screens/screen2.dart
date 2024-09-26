@@ -13,11 +13,13 @@ class _Screen2State extends State<Screen2> {
     return Scaffold (
       
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 81, 147),
         foregroundColor: Colors.white,
-        title: const Center(
-          child: Text("Manage Store",style:TextStyle(fontSize: 20)),
-        ),
+        title:  const Text("Manage Store",style:TextStyle(fontSize: 20)),
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        }, icon: const Icon(Icons.arrow_back)),
       ),
       body: SafeArea(
 

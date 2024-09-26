@@ -13,7 +13,9 @@ class Screen5 extends StatelessWidget {
         foregroundColor: Colors.white,
         centerTitle: true,
         title: const Text("Order #1688068"),
-        leading: const Icon(Icons.arrow_back),
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        }, icon: const Icon(Icons.arrow_back)),
       ),
       body: SafeArea(
         child: SingleChildScrollView(

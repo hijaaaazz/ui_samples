@@ -17,7 +17,9 @@ class _Screen1State extends State<Screen1> {
     return Scaffold(
       appBar: AppBar(
         foregroundColor: Colors.white,
-        leading: const Icon(Icons.arrow_back),
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        }, icon: const Icon(Icons.arrow_back)),
         backgroundColor: Colors.blue,
         title: const Text("Additional Information"),
       ),
